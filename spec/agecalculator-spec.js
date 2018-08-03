@@ -36,26 +36,94 @@ describe('AgeCalculator', function() {
   it('will calculate age left to live with given life expectancy on earth for male ', function() {
     let humanAge =new AgeCalculator(30);
     let gender = "male"
+    let planet = "earth"
     // console.log(inSeconds)
-    expect(humanAge.LifeExpectancy(gender)).toEqual(+ 38 + "left on earth");
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 38 + "left on earth");
   });
   it('will calculate age left to live with given life expectancy on earth for female', function() {
     let humanAge =new AgeCalculator(30);
     let gender = "female"
+    let planet = "earth"
     // console.log(inSeconds)
-    expect(humanAge.LifeExpectancy(gender)).toEqual(+ 42 + "left on earth");
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 42 + "left on earth");
   });
   it('will calculate age left to live with given life expectancy on earth for other', function() {
     let humanAge =new AgeCalculator(30);
     let gender = "others";
+    let planet = "earth"
     // console.log(inSeconds)
-    expect(humanAge.LifeExpectancy(gender)).toEqual(+ 40 + "left on earth");
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 40 + "left on earth");
   });
   it('will check for life exceeds the life expectancy', function() {
     let humanAge =new AgeCalculator(100);
     let gender = "female"
+    let planet = "earth"
     // console.log(inSeconds)
-    expect(humanAge.LifeExpectancy(gender)).toEqual("your year on earth exceeds life expectancy by" + 28);
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual("your year on earth exceeds life expectancy by" + 28);
+  });
+  it('will calculate age exceeds life expectancy mercury ', function() {
+    let humanAge =new AgeCalculator(30);
+    let gender = "female"
+    let planet = "mercury"
+
+    // console.log(inSeconds)
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual("your year on mercury exceeds life expectancy by" + 53);
+  });
+  it('will calculate age left to live with given life expectancy mercury ', function() {
+    let humanAge =new AgeCalculator(3);
+    let gender = "female"
+    let planet = "mercury"
+
+    // console.log(inSeconds)
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 60 + "left on mercury");
+  });
+  it('will calculate age exceeds life expectancy venus ', function() {
+    let humanAge =new AgeCalculator(50);
+    let gender = "female"
+    let planet = "venus"
+
+    // console.log(inSeconds)
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual("your year on venus exceeds life expectancy by" + 8);
+  });
+  it('will calculate age left to live with given life expectancy venus ', function() {
+    let humanAge =new AgeCalculator(30);
+    let gender = "female"
+    let planet = "venus"
+
+    // console.log(inSeconds)
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 24 + " years left on venus");
+  });
+  it('will calculate age exceeds life expectancy mars ', function() {
+    let humanAge =new AgeCalculator(150);
+    let gender = "female"
+    let planet = "mars"
+
+    // console.log(inSeconds)
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual("your year on mars exceeds life expectancy by" + 7);
+  });
+  it('will calculate age left to live with given life expectancy mars ', function() {
+    let humanAge =new AgeCalculator(30);
+    let gender = "female"
+    let planet = "mars"
+
+    // console.log(inSeconds)
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 57 + " years left on mars");
+  });
+  it('will calculate age exceeds life expectancy jupiter ', function() {
+    let humanAge =new AgeCalculator(1200);
+    let gender = "female"
+    let planet = "jupiter"
+
+    // console.log(inSeconds)
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual("your year on jupiter exceeds life expectancy by" + 29);
+  });
+  it('will calculate age left to live with given life expectancy jupiter ', function() {
+    let humanAge =new AgeCalculator(30);
+    let gender = "female"
+    let planet = "jupiter"
+
+    // console.log(inSeconds)
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 70 + "years left on jupiter");
   });
 
 });
