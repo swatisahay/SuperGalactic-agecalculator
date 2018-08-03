@@ -28,5 +28,10 @@ describe('AgeCalculator', function() {
     // console.log(inSeconds)
     expect(humanAge.MarsYears()).toEqual(15);
   });
+  it('will calculate age of humans in jupiter planet', function() {
+    let humanAge =new AgeCalculator(30);
+    // console.log(inSeconds)
+    expect(humanAge.JupiterYears()).toEqual(2);
+  });
 
 });
