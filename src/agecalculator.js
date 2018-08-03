@@ -10,7 +10,7 @@ export class AgeCalculator {
   }
 
  DiffBtw2Dates(){
-   // let difference=Math.abs((this.currentDate-this.birthDate)/(1000));
-   // return difference;
+   let difference=Math.abs((this.currentDate-this.birthDate)/(1000));
+   return difference;
  }
  }
