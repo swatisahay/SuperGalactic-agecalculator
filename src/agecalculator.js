@@ -25,7 +25,7 @@ export class AgeCalculator {
  }
  MarsYears(){
    //1 venus year = .62 earth year
-   // let marsYear=Math.floor(this.age/1.88);
-   // return marsYear;
+   let marsYear=Math.floor(this.age/1.88);
+   return marsYear;
  }
  }
