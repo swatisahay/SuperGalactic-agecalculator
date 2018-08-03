@@ -20,7 +20,7 @@ export class AgeCalculator {
  }
  VenusYears(){
    //1 venus year = .62 earth year
-   // let venusYear=Math.floor(this.age/.62);
-   // return venusYear;
+   let venusYear=Math.floor(this.age/.62);
+   return venusYear;
  }
  }
