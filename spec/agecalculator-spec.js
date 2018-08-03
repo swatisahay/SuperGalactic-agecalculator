@@ -3,7 +3,8 @@ import { AgeCalculator } from '../src/agecalculator';
 describe('AgeCalculator', function() {
 
   it('will convert age in seconds', function() {
-    let ageInSeconds = new AgeCalculator(30)
-    expect(ageInSeconds.convertAgeToSeconds()).toEqual(946,708,560);
+    let inSeconds =new AgeCalculator(30);
+    console.log(inSeconds)
+    expect(inSeconds.convertAgeToSeconds()).toEqual(946702080);
   });
 });

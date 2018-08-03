@@ -5,7 +5,7 @@ export class AgeCalculator {
     this.birthDate = birthdate;
   }
   convertAgeToSeconds(){
-    // let ageInSeconds=this.age*365*24*60*60;
-    // return ageInSeconds;
+    let ageInSeconds= Math.floor(this.age * 365.24 * 24 *60 *60);
+    return ageInSeconds;
   }
 }
