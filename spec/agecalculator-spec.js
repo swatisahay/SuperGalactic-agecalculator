@@ -33,5 +33,29 @@ describe('AgeCalculator', function() {
     // console.log(inSeconds)
     expect(humanAge.JupiterYears()).toEqual(2);
   });
+  it('will calculate age left to live with given life expectancy on earth for male ', function() {
+    let humanAge =new AgeCalculator(30);
+    let gender = "male"
+    // console.log(inSeconds)
+    expect(humanAge.LifeExpectancy(gender)).toEqual(+ 38 + "left on earth");
+  });
+  it('will calculate age left to live with given life expectancy on earth for female', function() {
+    let humanAge =new AgeCalculator(30);
+    let gender = "female"
+    // console.log(inSeconds)
+    expect(humanAge.LifeExpectancy(gender)).toEqual(+ 42 + "left on earth");
+  });
+  it('will calculate age left to live with given life expectancy on earth for other', function() {
+    let humanAge =new AgeCalculator(30);
+    let gender = "others";
+    // console.log(inSeconds)
+    expect(humanAge.LifeExpectancy(gender)).toEqual(+ 40 + "left on earth");
+  });
+  it('will check for life exceeds the life expectancy', function() {
+    let humanAge =new AgeCalculator(100);
+    let gender = "female"
+    // console.log(inSeconds)
+    expect(humanAge.LifeExpectancy(gender)).toEqual("your year on earth exceeds life expectancy by" + 28);
+  });
 
 });
