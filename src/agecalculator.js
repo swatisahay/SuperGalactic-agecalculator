@@ -15,7 +15,12 @@ export class AgeCalculator {
  }
  MercuryYears(){
    //1 mercury year = .24 earth year
-   let mercuryYear=this.age/.24;
+   let mercuryYear=Math.floor(this.age/.24);
    return mercuryYear;
+ }
+ VenusYears(){
+   //1 venus year = .62 earth year
+   // let venusYear=Math.floor(this.age/.62);
+   // return venusYear;
  }
  }
