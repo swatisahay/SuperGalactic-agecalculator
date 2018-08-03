@@ -15,7 +15,7 @@ export class AgeCalculator {
  }
  MercuryYears(){
    //1 mercury year = .24 earth year
-   // let mercuryYear=this.age/.24;
-   // return mercuryYear;
+   let mercuryYear=this.age/.24;
+   return mercuryYear;
  }
  }
