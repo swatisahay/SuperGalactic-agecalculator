@@ -34,7 +34,7 @@ Swati Sahay
 * JAVASCRIPT
 
 ### Support and Contact Details
-If you encounter any bugs or would like to make suggestions regarding this project, please feel free to contact austinbarr@protonmail.com.
+ Please feel free to contact swatiranjan0111@gmail.com.
 
 
 
