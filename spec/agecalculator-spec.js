@@ -13,4 +13,10 @@ describe('AgeCalculator', function() {
     let diffDate= new AgeCalculator(0, currentDate, birthDate);
     expect(diffDate.DiffBtw2Dates()).toEqual(946684800);
   });
+  it('will calculate age of humans in mercury planet', function() {
+    let humanAge =new AgeCalculator(30);
+    // console.log(inSeconds)
+    expect(humanAge.MercuryYears()).toEqual(125);
+  });
+
 });

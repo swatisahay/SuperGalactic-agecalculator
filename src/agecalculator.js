@@ -13,4 +13,9 @@ export class AgeCalculator {
    let difference=Math.abs((this.currentDate-this.birthDate)/(1000));
    return difference;
  }
+ MercuryYears(){
+   //1 mercury year = .24 earth year
+   // let mercuryYear=this.age/.24;
+   // return mercuryYear;
+ }
  }
