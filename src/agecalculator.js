@@ -30,7 +30,7 @@ export class AgeCalculator {
  }
  JupiterYears(){
    //1 venus year = .62 earth year
-   // let jupiterYear=Math.floor(this.age/11.86);
-   // return jupiterYear;
+   let jupiterYear=Math.floor(this.age/11.86);
+   return jupiterYear;
  }
  }
