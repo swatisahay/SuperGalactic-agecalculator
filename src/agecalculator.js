@@ -53,67 +53,37 @@ export class AgeCalculator {
      }
  }
  yearLeftToLive(LifeExpectancy, planet){
+   let yearsLeft = 0;
      if(planet==="earth")
      {
-       let yearLeftOnEarth= LifeExpectancy-this.age;
-     if(yearLeftOnEarth>0){
-       let outputAge= +yearLeftOnEarth+ "left on earth";
-       return outputAge;
+       yearsLeft= LifeExpectancy-this.age;
      }
-     else{
-       let outputAge= "your year on earth exceeds life expectancy by" + Math.abs(yearLeftOnEarth);
-       return outputAge;
-     }
-   }
     else if(planet==="mercury")
     {
-     let yearLeftOnMercury= LifeExpectancy-this.MercuryYears();
-     if(yearLeftOnMercury>0){
-       let outputAge= +yearLeftOnMercury+ "left on mercury";
-       return outputAge;
-     }
-     else{
-       let outputAge= "your year on mercury exceeds life expectancy by" + Math.abs(yearLeftOnMercury);
-       return outputAge;
-     }
-  }
-  else if(planet==="venus")
-    {
-     let yearLeftOnVenus= LifeExpectancy-this.VenusYears();
-     if(yearLeftOnVenus>0){
-       let outputAge= +yearLeftOnVenus + " years left on venus";
-       return outputAge;
-     }
-     else{
-       let outputAge= "your year on venus exceeds life expectancy by" + Math.abs(yearLeftOnVenus);
-       return outputAge;
-     }
-  }
-  else if(planet==="mars")
-    {
-     let yearLeftOnMars= LifeExpectancy-this.MarsYears();
-     if(yearLeftOnMars>0){
-       let outputAge= +yearLeftOnMars+ " years left on mars";
-       return outputAge;
-     }
-     else{
-       let outputAge= "your year on mars exceeds life expectancy by" + Math.abs(yearLeftOnMars);
-       return outputAge;
-     }
-   }
-  else if(planet==="jupiter")
-     {
-      let yearLeftOnJupiter= LifeExpectancy-this.JupiterYears();
-      if(yearLeftOnJupiter>0){
-        let outputAge= +yearLeftOnJupiter+ "years left on jupiter";
-        return outputAge;
-      }
-      else
-      {
-        let outputAge= "your year on jupiter exceeds life expectancy by" + Math.abs(yearLeftOnJupiter);
-        return outputAge;
-      }
+      yearsLeft= LifeExpectancy-this.MercuryYears();
     }
+    else if(planet==="venus")
+    {
+      yearsLeft= LifeExpectancy-this.VenusYears();
+    }
+    else if(planet==="mars")
+    {
+      yearsLeft= LifeExpectancy-this.MarsYears();
+    }
+    else if(planet==="jupiter")
+     {
+       yearsLeft= LifeExpectancy-this.JupiterYears();
+     }
+    if(yearsLeft>0){
+      let outputAge= +yearsLeft+ " years left to live in this planet";
+      return outputAge;
+    }
+    else
+    {
+      let outputAge= "your living years have  exceeded your life expectancy by" + Math.abs(yearsLeft);
+      return outputAge;
+    }
+
  //   let yearLeftOnVenus= LifeExpectancy-VenusYears(this.age);
  //   let yearLeftOnMars= LifeExpectancy-MarsYears(this.age);
  //   let yearLeftOnJupiter= LifeExpectancy-JupiterYears(this.age);

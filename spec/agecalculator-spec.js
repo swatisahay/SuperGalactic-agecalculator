@@ -38,28 +38,28 @@ describe('AgeCalculator', function() {
     let gender = "male"
     let planet = "earth"
     // console.log(inSeconds)
-    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 38 + "left on earth");
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 38 + " years left to live in this planet");
   });
   it('will calculate age left to live with given life expectancy on earth for female', function() {
     let humanAge =new AgeCalculator(30);
     let gender = "female"
     let planet = "earth"
     // console.log(inSeconds)
-    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 42 + "left on earth");
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 42 + " years left to live in this planet");
   });
   it('will calculate age left to live with given life expectancy on earth for other', function() {
     let humanAge =new AgeCalculator(30);
     let gender = "others";
     let planet = "earth"
     // console.log(inSeconds)
-    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 40 + "left on earth");
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 40 + " years left to live in this planet");
   });
   it('will check for life exceeds the life expectancy', function() {
     let humanAge =new AgeCalculator(100);
     let gender = "female"
     let planet = "earth"
     // console.log(inSeconds)
-    expect(humanAge.LifeExpectancy(gender, planet)).toEqual("your year on earth exceeds life expectancy by" + 28);
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual("your living years have  exceeded your life expectancy by" + 28);
   });
   it('will calculate age exceeds life expectancy mercury ', function() {
     let humanAge =new AgeCalculator(30);
@@ -67,7 +67,7 @@ describe('AgeCalculator', function() {
     let planet = "mercury"
 
     // console.log(inSeconds)
-    expect(humanAge.LifeExpectancy(gender, planet)).toEqual("your year on mercury exceeds life expectancy by" + 53);
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual("your living years have  exceeded your life expectancy by" + 53);
   });
   it('will calculate age left to live with given life expectancy mercury ', function() {
     let humanAge =new AgeCalculator(3);
@@ -75,7 +75,7 @@ describe('AgeCalculator', function() {
     let planet = "mercury"
 
     // console.log(inSeconds)
-    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 60 + "left on mercury");
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 60 + " years left to live in this planet");
   });
   it('will calculate age exceeds life expectancy venus ', function() {
     let humanAge =new AgeCalculator(50);
@@ -83,7 +83,7 @@ describe('AgeCalculator', function() {
     let planet = "venus"
 
     // console.log(inSeconds)
-    expect(humanAge.LifeExpectancy(gender, planet)).toEqual("your year on venus exceeds life expectancy by" + 8);
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual("your living years have  exceeded your life expectancy by" + 8);
   });
   it('will calculate age left to live with given life expectancy venus ', function() {
     let humanAge =new AgeCalculator(30);
@@ -91,7 +91,7 @@ describe('AgeCalculator', function() {
     let planet = "venus"
 
     // console.log(inSeconds)
-    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 24 + " years left on venus");
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 24 + " years left to live in this planet");
   });
   it('will calculate age exceeds life expectancy mars ', function() {
     let humanAge =new AgeCalculator(150);
@@ -99,7 +99,7 @@ describe('AgeCalculator', function() {
     let planet = "mars"
 
     // console.log(inSeconds)
-    expect(humanAge.LifeExpectancy(gender, planet)).toEqual("your year on mars exceeds life expectancy by" + 7);
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual("your living years have  exceeded your life expectancy by" + 7);
   });
   it('will calculate age left to live with given life expectancy mars ', function() {
     let humanAge =new AgeCalculator(30);
@@ -107,7 +107,7 @@ describe('AgeCalculator', function() {
     let planet = "mars"
 
     // console.log(inSeconds)
-    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 57 + " years left on mars");
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 57 + " years left to live in this planet");
   });
   it('will calculate age exceeds life expectancy jupiter ', function() {
     let humanAge =new AgeCalculator(1200);
@@ -115,7 +115,7 @@ describe('AgeCalculator', function() {
     let planet = "jupiter"
 
     // console.log(inSeconds)
-    expect(humanAge.LifeExpectancy(gender, planet)).toEqual("your year on jupiter exceeds life expectancy by" + 29);
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual("your living years have  exceeded your life expectancy by" + 29);
   });
   it('will calculate age left to live with given life expectancy jupiter ', function() {
     let humanAge =new AgeCalculator(30);
@@ -123,7 +123,7 @@ describe('AgeCalculator', function() {
     let planet = "jupiter"
 
     // console.log(inSeconds)
-    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 70 + "years left on jupiter");
+    expect(humanAge.LifeExpectancy(gender, planet)).toEqual(+ 70 + " years left to live in this planet");
   });
 
 });
